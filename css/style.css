@@ -1163,8 +1163,8 @@ a:hover {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    right: 8px;
-    top: 8px;
+    right: 0.35em;
+    top: 0.35em;
     background-color: #333;
     visibility: hidden;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1196,4 +1196,30 @@ a:hover {
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+}
+
+.btn-top-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.contact-us-style {
+    background-image: url(../images/contac_bg.jpg);
+    background-size: cover;
+}
+
+.contact-main {
+    background: rgba(255,255,255,0.5);
+    padding: 2em;
+    margin: 7em 2em 0 2em;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #ce3b02;
+    border-radius: 20em;
+}
+
+contact-value {
+    font-size: 0.8em !important;
+    color: white;
 }
