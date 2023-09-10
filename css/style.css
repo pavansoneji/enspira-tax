@@ -226,7 +226,8 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-color: #252525;
+    /* background-color: #252525; */
+    background-color: #5f5070e3;
     height: auto;
     background-size: 100%;
 }
@@ -281,10 +282,15 @@ button {
     background-repeat: no-repeat;
 }
 
+article>p {
+    font-size: 18px;
+}
+
 .banner_taital {
     width: 100%;
     float: left;
     padding: 100px 0px;
+    text-shadow: 2px 4px 4px rgba(46, 91, 173, 0.6);
 }
 
 .outstanding_text {
@@ -296,12 +302,32 @@ button {
 }
 
 .coffee_text {
-    width: 100%;
+    /* width: 100%;
     float: left;
     font-size: 70px;
     color: #fdfcfa;
     font-weight: bold;
     padding-bottom: 0px;
+    text-shadow: -1px -1px 10px #fff, -1px -1px 10px #fff, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 60px #ff00de, 0 0 80px #ff00de; */
+    display: block;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.coffee_text::after {
+    content: "Enspira KPO";
+    position: absolute;
+    color: #f2deff;
+    /* background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  ); */
+    /* -webkit-background-clip: text; */
+    top: -3px;
+    left: 3px;
 }
 
 .there_text {
@@ -311,6 +337,7 @@ button {
     color: #fff;
     margin: 0px;
     padding-bottom: 30px;
+    text-shadow: -1px -1px 10px #fff, -1px -1px 10px #fff, 0 0 20px #ff00de, 0 0 40px #ff00de, 0 0 60px #ff00de, 0 0 80px #ff00de;
 }
 
 .learnmore_bt {
@@ -401,6 +428,7 @@ button {
     color: #4c4c4b;
     margin: 0px;
     padding-top: 10px;
+    font-weight: 700;
 }
 
 .about_text {
@@ -588,9 +616,10 @@ a:hover {
 
 .house_icon>div {
     font-family: archivo;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bolder;
     color: #10e1bc;
+    text-align: center;
 }
 
 .box_main .house_icon .image_2 {
@@ -611,9 +640,11 @@ a:hover {
 
 .box_main {
     width: 100%;
-    background-color: #f76d37;
+    /* background-color: #f76d37; */
+    background-color: #cb45ea;
     padding: 40px 30px;
     box-shadow: 0px 0px 18px -6px;
+    height: 27em;
 }
 
 .box_main:hover .decorate_text {
@@ -895,7 +926,8 @@ a:hover {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #252525;
+    /* background-color: #252525; */
+    background-color: #5f5070e3;
     height: auto;
     padding: 95px 0px;
 }
@@ -1034,7 +1066,7 @@ a:hover {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 70%;
+    width: 95%;
     position: relative;
     transition: all 5s ease-in-out;
 }
@@ -1210,16 +1242,85 @@ a:hover {
 }
 
 .contact-main {
-    background: rgba(255,255,255,0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
+    background-color: #cb45ea;
     padding: 2em;
     margin: 7em 2em 0 2em;
     font-weight: bolder;
     font-size: 1.5em;
-    color: #ce3b02;
+    color: #ffffff;
     border-radius: 20em;
 }
 
-contact-value {
+.contact-value {
     font-size: 0.8em !important;
-    color: white;
+}
+
+/* Style for accounting and financial services */
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    flex: 1;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    color: #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.tab.active {
+    color: #1BABF9;
+    border-bottom: 2px solid #1BABF9;
+}
+
+.tab-li {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.tab-li a {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #CDCDCD;
+    border-bottom: 2px solid #CDCDCD;
+    margin-bottom: 0.4rem;
+    width: 100%;
+    display: block;
+}
+
+.tab-li a.active {
+    color: black;
+    border-bottom: 2px solid #f76d37;
+}
+
+.tab-li a {
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: block;
 }
