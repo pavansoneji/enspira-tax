@@ -641,7 +641,8 @@ a:hover {
 .box_main {
     width: 100%;
     /* background-color: #f76d37; */
-    background-color: #cb45ea;
+    /* background-color: #cb45ea; */
+    background-color: #7835d5;
     padding: 40px 30px;
     box-shadow: 0px 0px 18px -6px;
     height: 27em;
@@ -1243,7 +1244,7 @@ a:hover {
 
 .contact-main {
     /* background: rgba(255, 255, 255, 0.5); */
-    background-color: #cb45ea;
+    background-color: #7835d5;
     padding: 2em;
     margin: 7em 2em 0 2em;
     font-weight: bolder;
